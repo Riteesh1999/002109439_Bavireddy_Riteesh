@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(back.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009671;
+    position:absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    text-align: center;
+    width: 100%;
+    position: absolute;bottom: 30%;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #009671;
+    background: transparent;
+    color: rgb(0, 3, 5);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009671;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+    
+}
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+*{
+    box-sizing:border-box;
+    
+}
+.app{
+    text-align: center;
+    text-decoration: dotted;
+}
+.table{
+    width: 100%;
+    border-collapse:collapse;
+   
+}
+caption{
+    display: table-caption;
+    text-align: center;
+    text-transform:capitalize;
+    color:rgba(61, 255, 47, 0.737);
+    font-size: x-large;
+
+    
+}
+.table theader{
+    text-align: center;
+    text-decoration: dotted;
+}
+.table td, .table th{
+    padding: 12px 15px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+
+}
+.table th{
+    background-color: #009671;
+}
+.table tbody tr:nth-child(odd){
+    background-color:rgb(215, 215, 215);
+
+    }
+    .table tbody tr:nth-child(even){
+        background-color:rgb(215, 215, 215);
+    
+        }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-image: url(b.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .signup{
+        width: 300px;
+        box-shadow: 0 0 3px 0 #009671;
+        background: white;
+        padding: 20px;
+        margin: 8% auto 0;
+        text-align: center;
+    }
+    .signup h3{
+        color: #009671;
+        margin-bottom: 20px;
+    }
+    .input-box{
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        border: 1px solid #999;
+        outline:none;
+    }
+    .or{
+        background: white;
+        width: 30px;
+        margin: -10px auto 5px;
+        size: 24px;
+    }
